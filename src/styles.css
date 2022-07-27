@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+img {
+  width: auto !important;
+  height: 100px;
+  max-width: 250px !important;
+  height: 300px !important;
+  padding: 10px;
+  border: 2px solid #ccc;
+  margin: 15px 30px;
+}
+.cutnct {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #000;
+  /* color: #0bec0bfb; */
+}
+@-moz-document url-prefix() {
+  .cutnct {
+    -webkit-line-clamp: 3;
+    padding-bottom: 28px;
+  }
+}
